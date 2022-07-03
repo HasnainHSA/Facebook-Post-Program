@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--! for icons and symbols  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <title>Facebook post</title>
+</head>
+<body>
+    <nav>
+        
+        <div class='nav-left'>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png' />
+          <div class='nav-search'>
+            <i class="material-icons">search</i>
+            <input type='text' placeholder="Search Facebook"/>
+          </div>
+        </div>
+
+        <div class='nav__mid'>
+            <a href='https://www.facebook.com/' class='icon'>
+              <i class='material-icons'>home</i>
+            </a>
+            <a href='https://www.facebook.com/watch' class='icon'>
+              <i class='material-icons'>slideshow</i>
+            </a>
+            <a href='https://www.facebook.com/groups' class='icon'>
+              <i class='material-icons'>people_outline</i>
+            </a>
+            <a href=https://www.facebook.com/gaming/feed/' class='icon'>
+              <i class='material-icons'>view_headline</i>
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <a href='#' class="avatar">
+                <img class='avatar-img' src='./mine img.jpg' />
+                <span><strong>Hasnain</strong></span>
+            </a>
+            <div class="buttons">
+                <a href="#"><i class='material-icons'>add</i></a>
+                <a href="#"><i class='material-icons'>messenger</i></a>
+                <a href="#"><i class='material-icons'>notifications_active</i></a>
+                <a href="#"><i class='material-icons'>arrow_drop_down_circle</i></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="user-input">
+      <div class="form">
+        <form class="login-form">
+          <label>Name:</label>
+          <input type="text" class="uname" id="name" placeholder="Enter your name"/>
+
+          <label>Image:</label>
+          <input type="text" id="img" placeholder="Enter your image url"/>
+
+          <label>Post title:</label>
+          <input type="text" id="post-title" placeholder="Enter post title"/>
+
+          <label>Post description:</label>
+          <textarea name="" id="post-value" cols="30" rows="10" placeholder="Enter post description"></textarea>
+        </form>
+        <button onclick="postsubmition()">Submit</button>
+
+      </div>
+    </div>
+
+    <div id="main"></div> 
+
+
+  
+</body>
+<script src="./app.js"></script>
+</html>
